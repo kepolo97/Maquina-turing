@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Máquina de Turing</title>
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/icono.ico" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    <!-- Font Awesome icons (free version)-->
+    <script
+      src="https://use.fontawesome.com/releases/v5.12.1/js/all.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Google fonts-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style_simulation.css" />
+  </head>
+
+  <body id="page-top">
+    <!-- Navigation-->
+    <nav
+      class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top"
+      id="mainNav"
+    >
+      <div class="container">
+        <a href=""
+          ><img src="assets/img/escudo.png" alt="" class="logo_style"
+        /></a>
+        <a class="navbar-brand js-scroll-trigger" href="#page-top"
+          >UNIMAGDALENA</a
+        ><button
+          class="navbar-toggler navbar-toggler-right font-weight-bold bg-primary text-white rounded"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarResponsive"
+          aria-controls="navbarResponsive"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          Menu <i class="fas fa-bars"></i>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item mx-0 mx-lg-1">
+              <a
+                class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
+                href="#about"
+                >MÁQUINA DE TURING</a
+              >
+            </li>
+            <li class="nav-item mx-0 mx-lg-1">
+              <a
+                class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
+                href="#simulation"
+                >SIMULACIÓN</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Masthead-->
+    <header class="masthead bg-primary text-white text-center" id="about">
+      <div class="container d-flex align-items-center flex-column">
+        <!-- Masthead Avatar Image--><img
+          class="masthead-avatar mb-5"
+          src="assets/img/logo_turing.svg"
+          alt=""
+        /><!-- Masthead Heading-->
+        <h4 class="text-uppercase mb-4">¿Qué es la Maquina de Turing?</h4>
+        <div class="divider-custom-line1"></div>
+
+        <!-- Icon Divider-->
+
+        <!-- Masthead Subheading-->
+        <p class="masthead-subheading font-weight-light mt-4">
+          Es un modelo matemático consistente en un autómata que es capaz de
+          “implementar cualquier problema matemático expresado a través de un
+          algoritmo”. Consta de una cinta infinita dividida en espacios de
+          trabajo o celdas yuxtapuestas que actúa como memoria, un cabezal capaz
+          de leer y escribir símbolos en la cinta y moverla de celda en celda a
+          derecha e izquierda.
+        </p>
+      </div>
+    </header>
+
+    <!-- ZONA DE SIMULACIÓN-->
+    <section class="page-section portfolio" id="simulation">
+      <div class="container">
+        <div><img src="assets/img/logo2.svg" alt="" class="logo2" /></div>
+        <form action="" class="borde">
+          <div class="row mt-4">
+            <div class="col-5 text-center">
+              <h6 class="font-weight-bold">Pasos:</h6>
+              <h6 id="conteo">0</h6>
+            </div>
+            <div class="col-2 text-center">
+              <h6 class="font-weight-bold" id="aceptado" class="accep"></h6>
+            </div>
+            <div class="col-5 text-center">
+              <h6 class="font-weight-bold">Estado:</h6>
+              <h6 id="estate">Inicial</h6>
+            </div>
+          </div>
+
+          <div class="contend">
+            <div>
+              <img src="assets/img/flecha.svg" alt="flecha" id="flecha" />
+            </div>
+            <div class="cadena" id="cadena">
+              <div class="cuadrado" id="cuadro0"></div>
+              <div class="cuadrado" id="cuadro1"></div>
+              <div class="cuadrado" id="cuadro2"></div>
+              <div class="cuadrado" id="cuadro3"></div>
+              <div class="cuadrado" id="cuadro4"></div>
+              <div class="cuadrado" id="cuadro5"></div>
+              <div class="cuadrado" id="cuadro6"></div>
+              <div class="cuadrado" id="cuadro7"></div>
+              <div class="cuadrado" id="cuadro8"></div>
+              <div class="cuadrado" id="cuadro9"></div>
+              <div class="cuadrado" id="cuadro10"></div>
+              <div class="cuadrado" id="cuadro11"></div>
+              <div class="cuadrado" id="cuadro12"></div>
+              <div class="cuadrado" id="cuadro13"></div>
+              <div class="cuadrado" id="cuadro14"></div>
+              <div class="cuadrado" id="cuadro15"></div>
+              <div class="cuadrado" id="cuadro16"></div>
+              <div class="cuadrado" id="cuadro17"></div>
+              <div class="cuadrado" id="cuadro18"></div>
+              <div class="cuadrado" id="cuadro19"></div>
+              <div class="cuadrado" id="cuadro20"></div>
+              <div class="cuadrado" id="cuadro21"></div>
+              <div class="cuadrado" id="cuadro22"></div>
+              <div class="cuadrado" id="cuadro23"></div>
+            </div>
+          </div>
+
+          <div class="row mt-4 mb-4 form-group">
+            <div class="input-group col-5 justify-content-center">
+              <img src="assets/img/lapiz.png" alt="" class="img-alto" />
+              <input
+                id="entrada"
+                type="text"
+                name="cantidad"
+                placeholder="Ingresa la expresión"
+                aria-describedby="basic-addon1"
+                size="25"
+                class="espacio"
+                maxlength="16"
+              />
+              <div class="input-group-append efecto">
+                <button
+                  class="btn btn-secondary font-weight-bold"
+                  id="boton1"
+                  type="button"
+                  value="Cargar"
+                  onclick="cargar()"
+                >
+                  Subir
+                </button>
+              </div>
+            </div>
+
+            <div class="col-3 mt-2">
+              <input type="range" class="custom-range" id="vel" value="4" min="0" max="4"  step="1" disabled="true">
+            </div>
+
+            <div class="col-2 justify-content-end efecto">
+              <img src="assets/img/play.png" alt="" />
+              <input
+                id="boton2"
+                type="reset"
+                value="Ejecutar"
+                onclick="logica()"
+                class="btn btn-secondary font-weight-bold"
+                disabled="true"
+              />
+            </div>
+
+            <div class="col-2 justify-content-start efecto">
+              <img src="assets/img/stop.png" alt="" />
+              <input
+                id="stope"
+                type="button"
+                value="Detener"
+                onclick="detener()"
+                class="btn btn-secondary font-weight-bold"
+                disabled="true"
+              />
+            </div>            
+          </div>
+        </form>
+      </div>
+    </section>
+    <!-- FIN ZONA DE SIMULACIÓN-->
+
+    <!-- Footer-->
+    <footer class="footer text-center">
+      <div class="container">
+        <div class="row">
+          <!-- Footer Location-->
+          <div class="col-lg-4 mb-5 mb-lg-0">
+            <h4 class="text-uppercase mb-4">SOBRE EL PROYECTO</h4>
+            <p class="lead mb-0">
+              Es una simulación de la Máquina de Turing, fue realizado en
+              JavaScript, jquery, HTML, CSS por tres estudiantes de Ingeniería
+              de Sistemas. La finalidad es convertir un lenguange compredido
+              entre [a,b] y esté se cambie a un lenguaje de solo (a) y se
+              detenga en el estado inicial.
+            </p>
+          </div>
+          <!-- Footer Social Icons-->
+          <div class="col-lg-4 mb-5 mb-lg-0">
+            <h4 class="text-uppercase mb-4">Redes Sociales</h4>
+            <a
+              class="btn btn-outline-light btn-social mx-1"
+              href="https://www.facebook.com/"
+              ><i class="fab fa-fw fa-facebook-f"></i></a
+            ><a
+              class="btn btn-outline-light btn-social mx-1"
+              href="https://www.twitter.com/"
+              ><i class="fab fa-fw fa-twitter"></i></a
+            ><a
+              class="btn btn-outline-light btn-social mx-1"
+              href="https://www.instagram.com/"
+              ><i class="fab fa-fw fa-linkedin-in"></i
+            ></a>
+            <h4 class="text-uppercase mb-2 mt-4">Campus</h4>
+            <a href="https://www.unimagdalena.edu.co/"
+              ><img src="assets/img/tree.png" alt="" class="img_pie2 mt-3"
+            /></a>
+            <p class="lead mt-4">Universidad del Magdalena</p>
+          </div>
+          <!-- Footer About Text-->
+          <div class="col-lg-4">
+            <h4 class="text-uppercase mb-4">INFORMACIÓN GENERAL</h4>
+
+            <p class="lead mb-0 font-weight-bold">Javier De Az Pineda</p>
+            <p class="lead mb-0">jodeazpineda@gmail.com</p>
+
+            <p class="lead mb-0 mt-3 font-weight-bold">Kevin Polo Cantillo</p>
+            <p class="lead mb-0">kvnpolo97@gmail.com</p>
+
+            <p class="lead mb-0 mt-3 font-weight-bold">Erik Julio</p>
+            <p class="lead mb-0">harneerik@gmail.com</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Copyright Section-->
+    <section class="copyright py-4 text-center text-white">
+      <div class="container">
+        <small>Copyright © Machine-Turning 2020</small>
+      </div>
+    </section>
+    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes)-->
+    <div class="scroll-to-top d-lg-none position-fixed">
+      <a
+        class="js-scroll-trigger d-block text-center text-white rounded"
+        href="#page-top"
+        ><i class="fa fa-chevron-up"></i
+      ></a>
+    </div>
+    <!-- Portfolio Modals--><!-- Portfolio Modal 1-->
+    <div
+      class="portfolio-modal modal fade"
+      id="portfolioModal1"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="portfolioModal1Label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl" role="document">
+        <div class="modal-content">
+          <button
+            class="close"
+            type="button"
+            data-dismiss="modal"
+            aria-label="Close"
+          >
+            <span aria-hidden="true"><i class="fas fa-times"></i></span>
+          </button>
+          <div class="modal-body text-center">
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-lg-8">
+                  <!-- Portfolio Modal - Title-->
+                  <h2
+                    class="portfolio-modal-title text-secondary text-uppercase mb-0"
+                  >
+                    Log Cabin
+                  </h2>
+                  <!-- Icon Divider-->
+                  <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon">
+                      <i class="fas fa-star"></i>
+                    </div>
+                    <div class="divider-custom-line"></div>
+                  </div>
+                  <!-- Portfolio Modal - Image--><img
+                    class="img-fluid rounded mb-5"
+                    src="assets/img/portfolio/cabin.png"
+                    alt=""
+                  /><!-- Portfolio Modal - Text-->
+                  <p class="mb-5">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Mollitia neque assumenda ipsam nihil, molestias magnam,
+                    recusandae quos quis inventore quisquam velit asperiores,
+                    vitae? Reprehenderit soluta, eos quod consequuntur itaque.
+                    Nam.
+                  </p>
+                  <button class="btn btn-primary" href="#" data-dismiss="modal">
+                    <i class="fas fa-times fa-fw"></i>Close Window
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Portfolio Modal 2-->
+    <div
+      class="portfolio-modal modal fade"
+      id="portfolioModal2"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="portfolioModal2Label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl" role="document">
+        <div class="modal-content">
+          <button
+            class="close"
+            type="button"
+            data-dismiss="modal"
+            aria-label="Close"
+          >
+            <span aria-hidden="true"><i class="fas fa-times"></i></span>
+          </button>
+          <div class="modal-body text-center">
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-lg-8">
+                  <!-- Portfolio Modal - Title-->
+                  <h2
+                    class="portfolio-modal-title text-secondary text-uppercase mb-0"
+                  >
+                    Tasty Cake
+                  </h2>
+                  <!-- Icon Divider-->
+                  <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon">
+                      <i class="fas fa-star"></i>
+                    </div>
+                    <div class="divider-custom-line"></div>
+                  </div>
+                  <!-- Portfolio Modal - Image--><img
+                    class="img-fluid rounded mb-5"
+                    src="assets/img/portfolio/cake.png"
+                    alt=""
+                  /><!-- Portfolio Modal - Text-->
+                  <p class="mb-5">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Mollitia neque assumenda ipsam nihil, molestias magnam,
+                    recusandae quos quis inventore quisquam velit asperiores,
+                    vitae? Reprehenderit soluta, eos quod consequuntur itaque.
+                    Nam.
+                  </p>
+                  <button class="btn btn-primary" href="#" data-dismiss="modal">
+                    <i class="fas fa-times fa-fw"></i>Close Window
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Portfolio Modal 3-->
+    <div
+      class="portfolio-modal modal fade"
+      id="portfolioModal3"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="portfolioModal3Label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl" role="document">
+        <div class="modal-content">
+          <button
+            class="close"
+            type="button"
+            data-dismiss="modal"
+            aria-label="Close"
+          >
+            <span aria-hidden="true"><i class="fas fa-times"></i></span>
+          </button>
+          <div class="modal-body text-center">
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-lg-8">
+                  <!-- Portfolio Modal - Title-->
+                  <h2
+                    class="portfolio-modal-title text-secondary text-uppercase mb-0"
+                  >
+                    Circus Tent
+                  </h2>
+                  <!-- Icon Divider-->
+                  <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon">
+                      <i class="fas fa-star"></i>
+                    </div>
+                    <div class="divider-custom-line"></div>
+                  </div>
+                  <!-- Portfolio Modal - Image--><img
+                    class="img-fluid rounded mb-5"
+                    src="assets/img/portfolio/circus.png"
+                    alt=""
+                  /><!-- Portfolio Modal - Text-->
+                  <p class="mb-5">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Mollitia neque assumenda ipsam nihil, molestias magnam,
+                    recusandae quos quis inventore quisquam velit asperiores,
+                    vitae? Reprehenderit soluta, eos quod consequuntur itaque.
+                    Nam.
+                  </p>
+                  <button class="btn btn-primary" href="#" data-dismiss="modal">
+                    <i class="fas fa-times fa-fw"></i>Close Window
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Portfolio Modal 4-->
+    <div
+      class="portfolio-modal modal fade"
+      id="portfolioModal4"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="portfolioModal4Label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl" role="document">
+        <div class="modal-content">
+          <button
+            class="close"
+            type="button"
+            data-dismiss="modal"
+            aria-label="Close"
+          >
+            <span aria-hidden="true"><i class="fas fa-times"></i></span>
+          </button>
+          <div class="modal-body text-center">
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-lg-8">
+                  <!-- Portfolio Modal - Title-->
+                  <h2
+                    class="portfolio-modal-title text-secondary text-uppercase mb-0"
+                  >
+                    Controller
+                  </h2>
+                  <!-- Icon Divider-->
+                  <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon">
+                      <i class="fas fa-star"></i>
+                    </div>
+                    <div class="divider-custom-line"></div>
+                  </div>
+                  <!-- Portfolio Modal - Image--><img
+                    class="img-fluid rounded mb-5"
+                    src="assets/img/portfolio/game.png"
+                    alt=""
+                  /><!-- Portfolio Modal - Text-->
+                  <p class="mb-5">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Mollitia neque assumenda ipsam nihil, molestias magnam,
+                    recusandae quos quis inventore quisquam velit asperiores,
+                    vitae? Reprehenderit soluta, eos quod consequuntur itaque.
+                    Nam.
+                  </p>
+                  <button class="btn btn-primary" href="#" data-dismiss="modal">
+                    <i class="fas fa-times fa-fw"></i>Close Window
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Portfolio Modal 5-->
+    <div
+      class="portfolio-modal modal fade"
+      id="portfolioModal5"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="portfolioModal5Label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl" role="document">
+        <div class="modal-content">
+          <button
+            class="close"
+            type="button"
+            data-dismiss="modal"
+            aria-label="Close"
+          >
+            <span aria-hidden="true"><i class="fas fa-times"></i></span>
+          </button>
+          <div class="modal-body text-center">
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-lg-8">
+                  <!-- Portfolio Modal - Title-->
+                  <h2
+                    class="portfolio-modal-title text-secondary text-uppercase mb-0"
+                  >
+                    Locked Safe
+                  </h2>
+                  <!-- Icon Divider-->
+                  <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon">
+                      <i class="fas fa-star"></i>
+                    </div>
+                    <div class="divider-custom-line"></div>
+                  </div>
+                  <!-- Portfolio Modal - Image--><img
+                    class="img-fluid rounded mb-5"
+                    src="assets/img/portfolio/safe.png"
+                    alt=""
+                  /><!-- Portfolio Modal - Text-->
+                  <p class="mb-5">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Mollitia neque assumenda ipsam nihil, molestias magnam,
+                    recusandae quos quis inventore quisquam velit asperiores,
+                    vitae? Reprehenderit soluta, eos quod consequuntur itaque.
+                    Nam.
+                  </p>
+                  <button class="btn btn-primary" href="#" data-dismiss="modal">
+                    <i class="fas fa-times fa-fw"></i>Close Window
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Portfolio Modal 6-->
+    <div
+      class="portfolio-modal modal fade"
+      id="portfolioModal6"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="portfolioModal6Label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl" role="document">
+        <div class="modal-content">
+          <button
+            class="close"
+            type="button"
+            data-dismiss="modal"
+            aria-label="Close"
+          >
+            <span aria-hidden="true"><i class="fas fa-times"></i></span>
+          </button>
+          <div class="modal-body text-center">
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-lg-8">
+                  <!-- Portfolio Modal - Title-->
+                  <h2
+                    class="portfolio-modal-title text-secondary text-uppercase mb-0"
+                  >
+                    Submarine
+                  </h2>
+                  <!-- Icon Divider-->
+                  <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon">
+                      <i class="fas fa-star"></i>
+                    </div>
+                    <div class="divider-custom-line"></div>
+                  </div>
+                  <!-- Portfolio Modal - Image--><img
+                    class="img-fluid rounded mb-5"
+                    src="assets/img/portfolio/submarine.png"
+                    alt=""
+                  /><!-- Portfolio Modal - Text-->
+                  <p class="mb-5">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Mollitia neque assumenda ipsam nihil, molestias magnam,
+                    recusandae quos quis inventore quisquam velit asperiores,
+                    vitae? Reprehenderit soluta, eos quod consequuntur itaque.
+                    Nam.
+                  </p>
+                  <button class="btn btn-primary" href="#" data-dismiss="modal">
+                    <i class="fas fa-times fa-fw"></i>Close Window
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <!-- Third party plugin JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <!-- Contact form JS-->
+    <script src="assets/mail/jqBootstrapValidation.js"></script>
+    <script src="assets/mail/contact_me.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script>
+      src = "https://cdn.jsdelivr.net/npm/@glidejs/glide";
+    </script>
+    <!-- Scripts de la simulación -->
+    <script src="js/app.js"></script>
+    <script src="js/cargar.js"></script>
+    <!-- Alert-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  </body>
+</html>
